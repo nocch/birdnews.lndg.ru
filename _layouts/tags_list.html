@@ -1,7 +1,7 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
-    <title>Hello, world!</title>
+    <title>Новости о птицах</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,17 +9,56 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   </head>
+    
+    
+    {% include header.html %}
+
+
+
+    
   <body>
       {% assign tag_name = page.name | remove: '.html' %}
-      <ul>
+        
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
         {% for post in site.posts %}
-          {% if post.tags contains tag_name %}
-            <li>
-              <a href="{{post.url}}">{{post.title}}</a>
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
+                 {% cycle 'add row' : '<div class="row">', '', %}
+                {% if post.tags contains tag_name %}
+            <div class="col-sm-6">
+                                   <div class="post-preview">
+                        <a href="{{ post.url }}">
+
+
+                             <img width="100%" src="/img/post-bg{{ post.prewImg }}.png">
+                            <h2 class="post-title">
+                                {{ post.title }}
+                            </h2>
+                            <h3 class="post-subtitle">
+                                {{ post.description }}
+                            </h3>
+                        </a>
+                        <p class="post-meta">Опубликовано автором <a href="#">{{ post.author }}</a> {{ news.date | date: "%Y-%m-%d" }}</p>
+                    </div>
+                    <hr>
+            </div>
+
+                {% cycle 'end row' : '', '</div>' %}
+        {% endif %}
+         {% endfor %}
+        {% cycle 'end row' : '', '</div>' %}
+
+                <!-- Pager -->
+
+            </div>
+        </div>  
+      
+      
+      
+      
+    {% include footer.html %}
+      
+      
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

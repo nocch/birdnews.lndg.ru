@@ -8,11 +8,13 @@ coverImg: "home-bg.jpg"
 
 ---
 <hr>
+<div style="margin:0 auto; text-align: center;">
 {% for p in site.pages %}
   {% if p.url contains '/tags/' %}
     <a href="{{p.url}}">{{p.name | remove: '.html'}}</a>
   {% endif %}
 {% endfor %}
+</div>
 <hr>
 
 
