@@ -16,13 +16,11 @@
 
     <pre>
       {% assign tag_name = page.name | remove: '.html' %}
-
-      {{ site.posts | size }}
       {% for post in site.posts %}
-        <h1>{{post.title}}</h1>
+        {% if post.tags contains tag_name %}
+          <h1>{{post.title}}</h1>
+        {% endif %}
       {% endfor %}
-      {{ tag_name | jsonify }}
-      {{ page | jsonify }}
     </pre>
 
 
