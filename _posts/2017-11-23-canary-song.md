@@ -6,7 +6,7 @@ author: "BirdNews"
 coverImg: "post-bg.jpg"
 prewImg: "20"
 tags:
-  - moscow
+  - Москва
 ---
 
 #73 конкурс пения канареек овсяночного напева 02.12.2017 Москва
