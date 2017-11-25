@@ -7,7 +7,7 @@ author: "BirdNews"
 coverImg: "post-bg.jpg"
 prewImg: "22"
 tags:
-  - piter
+  - Санкт-Петербург
 ---
 
 #Кубок Санкт-Петербурга по спортивной орнитологии «Осень-2017»

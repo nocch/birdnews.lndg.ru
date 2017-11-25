@@ -6,7 +6,7 @@ author: "BirdNews"
 coverImg: "post-bg.jpg"
 prewImg: "24"
 tags:
-  - chelabinsk
+  - Челябинск
 ---
 
 #Челябинск, Орнитологическая встреча «Посмотреть на хохлатую синицу»

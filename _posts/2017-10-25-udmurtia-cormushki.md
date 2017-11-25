@@ -6,7 +6,7 @@ author: "BirdNews"
 coverImg: "post-bg.jpg"
 prewImg: "23"
 tags:
-  - udmurtia
+  - Удмуртия
 ---
 
 #Cобрание членов Московского клуба любителей певчих и экзотических птиц
