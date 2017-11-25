@@ -4,7 +4,7 @@ title: "конкурс «Птицы на кормушках»"
 description: "В этом году фотоконкурс посвящён памяти Юрия Фёдоровича Фролова  - основателя и вдохновителя фотоохоты в Удмуртии."
 author: "BirdNews"
 coverImg: "post-bg.jpg"
-prewImg: "21"
+prewImg: "23"
 tags:
   - udmurtia
 ---
