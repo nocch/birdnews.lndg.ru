@@ -17,6 +17,10 @@
     <pre>
       {% assign tag_name = page.name | remove: '.html' %}
 
+      {{ site.posts | size }}
+      {% for post in site.posts %}
+        <h1>{{post.title}}</h1>
+      {% endfor %}
       {{ tag_name | jsonify }}
       {{ page | jsonify }}
     </pre>
