@@ -22,8 +22,7 @@ coverImg: "home-bg.jpg"
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
         {% for news in paginator.posts %}
-
-                 {% cycle 'add row' : '<div class="row">', nil, %}
+                 {% cycle 'add row' : '<div class="row">', '', %}
 
             <div class="col-sm-6">
                                    <div class="post-preview">
@@ -43,12 +42,11 @@ coverImg: "home-bg.jpg"
                     <hr>
             </div>
 
-                {% cycle 'end row' : nil, '</div>' %}
-
-
+                {% cycle 'end row' : '', '</div>' %}
 
          {% endfor %}
-        {% cycle 'end row' : nil, '</div>' %}
+        {% cycle 'end row' : '', '</div>' %}
+
                 <!-- Pager -->
                 <ul class="pager">
                     {% if paginator.previous_page %}

@@ -6,7 +6,7 @@ author: "BirdNews"
 coverImg: "post-bg.jpg"
 prewImg: "21"
 tags:
-  - piter
+  - moscow
 ---
 
 #Cобрание членов Московского клуба любителей певчих и экзотических птиц
