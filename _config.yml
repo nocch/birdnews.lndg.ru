@@ -1,0 +1,7 @@
+markdown: redcarpet
+paginate: 20
+baseurl: /
+
+gems:
+ - jekyll-sitemap
+ - jekyll-paginate
