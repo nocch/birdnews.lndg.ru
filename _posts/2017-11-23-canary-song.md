@@ -5,6 +5,7 @@ description: "73 конкурс пения канареек овсяночног
 author: "BirdNews"
 coverImg: "post-bg.jpg"
 prewImg: "20"
+comments: true
 tags:
   - Москва
 ---

@@ -5,6 +5,7 @@ description: "В этом году фотоконкурс посвящён па�
 author: "BirdNews"
 coverImg: "post-bg.jpg"
 prewImg: "23"
+comments: true
 tags:
   - Удмуртия
 ---

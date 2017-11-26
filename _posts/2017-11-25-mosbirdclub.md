@@ -5,6 +5,7 @@ description: "Cобрание членов Московского клуба л�
 author: "BirdNews"
 coverImg: "post-bg.jpg"
 prewImg: "21"
+comments: true
 tags:
   - Москва
 ---
