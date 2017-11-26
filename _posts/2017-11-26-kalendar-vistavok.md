@@ -5,6 +5,7 @@ description: "Голуби, декоративные и сельскохозяй
 author: "BirdNews"
 coverImg: "post-bg.jpg"
 prewImg: "25"
+comments: true
 tags:
   - Москва
   - Тула

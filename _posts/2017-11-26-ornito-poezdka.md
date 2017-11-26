@@ -5,6 +5,7 @@ description: "Ориентировочная дата поездки - 3 дек�
 author: "BirdNews"
 coverImg: "post-bg.jpg"
 prewImg: "24"
+comments: true
 tags:
   - Челябинск
 ---
