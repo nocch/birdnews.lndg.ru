@@ -7,6 +7,9 @@ coverImg: "post-bg.jpg"
 prewImg: "00"
 comments: true
 tags:
+ 
+  - Московская область
+  - Мытищи
   - Москва
  
 ---
