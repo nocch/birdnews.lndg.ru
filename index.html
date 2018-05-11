@@ -29,8 +29,9 @@ coverImg: "home-bg.jpg"
             <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
 
         {% for news in paginator.posts %}
-            {% if news.tag_name != "Интересное" %}
-           
+        {% if news.tags contains "Интересное" %}
+        {% else %}    
+                
                  {% cycle 'add row' : '<div class="row">', '', %}
 
             <div class="col-sm-6">
@@ -47,7 +48,7 @@ coverImg: "home-bg.jpg"
                             </h3>
                         </a>
                         <p class="post-meta">Опубликовано автором <a href="#">{{ news.author }}</a> {{ news.date | date: "%Y-%m-%d" }}</p>
-                        <p class="post-meta"> {{ news.tag_name }} </p>
+                       <!-- <p class="post-meta"> {{ news.tags }} </p>-->
                     </div>
                     <hr>
             </div>
@@ -55,6 +56,7 @@ coverImg: "home-bg.jpg"
                 {% cycle 'end row' : '', '</div>' %}
             {% endif %}
          {% endfor %}
+    
 
         {% cycle 'end row' : '', '</div>' %}
 
