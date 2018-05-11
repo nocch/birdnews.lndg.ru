@@ -28,7 +28,9 @@ coverImg: "home-bg.jpg"
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+
         {% for news in paginator.posts %}
+            {% if tag_name != "Интересное" %}
                  {% cycle 'add row' : '<div class="row">', '', %}
 
             <div class="col-sm-6">
@@ -50,7 +52,7 @@ coverImg: "home-bg.jpg"
             </div>
 
                 {% cycle 'end row' : '', '</div>' %}
-
+            {% endif %}
          {% endfor %}
         {% cycle 'end row' : '', '</div>' %}
 
