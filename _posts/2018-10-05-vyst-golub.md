@@ -31,7 +31,6 @@ I форум голубеводов Поволжья, Урала и Сибири
 
 Подготовка голубей к выставкам и их оценка.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3wedGq2t6hk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+![img](/img/post-bg30.png)
 
-
-Информация с сайта http://forums.gularis.com/viewtopic.php?f=102&t=1240
+Информация с сайта [forums.gularis.com](http://forums.gularis.com/viewtopic.php?f=102&t=1240)  
