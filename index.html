@@ -31,7 +31,8 @@ coverImg: "home-bg.jpg"
         {% for news in paginator.posts %}
         {% if news.tags contains "Интересное" %}
         {% else %}    
-                
+        {% if news.tags contains "Репортажи и отчеты" %}
+        {% else %}            
                  {% cycle 'add row' : '<div class="row">', '', %}
 
             <div class="col-sm-6">
@@ -54,6 +55,7 @@ coverImg: "home-bg.jpg"
             </div>
 
                 {% cycle 'end row' : '', '</div>' %}
+            {% endif %}
             {% endif %}
          {% endfor %}
     
