@@ -8,7 +8,7 @@ prewImg: "00"
 comments: true
 tags:
  
-  - Интересное
+  - Москва
  
 ---
 
