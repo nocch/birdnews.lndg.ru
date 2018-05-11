@@ -29,7 +29,7 @@ coverImg: "home-bg.jpg"
             <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
 
         {% for news in paginator.posts %}
-            {% if news.tags != "Интересное" %}
+            {% if news.tag != "Интересное" %}
            
                  {% cycle 'add row' : '<div class="row">', '', %}
 
