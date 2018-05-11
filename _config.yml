@@ -1,6 +1,6 @@
 paginate: 8
 baseurl: /
 
-gems:
+plugins:
 
  - jekyll-paginate
