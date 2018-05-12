@@ -28,35 +28,27 @@ coverImg: "home-bg.jpg"
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
 
-        {% for news in paginator.posts %}
-        {% if news.tags contains "Интересное" %}
-        {% else %}    
-        {% if news.tags contains "Репортажи и отчеты" %}
-        {% else %}            
+        {% for news in paginator.posts %}    
+            {% unless news.tags contains "Интересное" or news.tags contains "Репортажи и отчеты"%}
                  {% cycle 'add row' : '<div class="row">', '', %}
-
-            <div class="col-sm-6">
-                                   <div class="post-preview">
-                        <a href="{{ news.url }}">
-
-
-                             <img width="100%" src="/img/post-bg{{ news.prewImg }}.png">
-                            <h2 class="post-title">
-                                {{ news.title }}
-                            </h2>
-                            <h3 class="post-subtitle">
-                                {{ news.description }}
-                            </h3>
-                        </a>
-                        <p class="post-meta">Опубликовано автором <a href="#">{{ news.author }}</a> {{ news.date | date: "%Y-%m-%d" }}</p>
-                       <!-- <p class="post-meta"> {{ news.tags }} </p>-->
+                    <div class="col-sm-6">
+                        <div class="post-preview">
+                            <a href="{{ news.url }}">
+                                 <img width="100%" src="/img/post-bg{{ news.prewImg }}.png">
+                                <h2 class="post-title">
+                                    {{ news.title }}
+                                </h2>
+                                <h3 class="post-subtitle">
+                                    {{ news.description }}
+                                </h3>
+                            </a>
+                            <p class="post-meta">Опубликовано автором <a href="#">{{ news.author }}</a> {{ news.date | date: "%Y-%m-%d" }}</p>
+                           <!-- <p class="post-meta"> {{ news.tags }} </p>-->
+                        </div>
+                        <hr>
                     </div>
-                    <hr>
-            </div>
-
-                {% cycle 'end row' : '', '</div>' %}
-            {% endif %}
-            {% endif %}
+                    {% cycle 'end row' : '', '</div>' %}               
+                {% endunless %}
          {% endfor %}
     
 
