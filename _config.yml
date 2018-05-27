@@ -1,4 +1,5 @@
 paginate: 8
+url: https://birdnews.lndg.ru
 baseurl: /
 
 plugins:
